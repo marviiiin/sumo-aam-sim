@@ -1,0 +1,19 @@
+# SUMO-AAMSim dependencies
+#
+# SUMO must be installed separately — see README.md
+# CarlaAir must be downloaded separately — see README.md
+
+# SUMO Python bindings (installed with SUMO, but also available via pip)
+traci>=1.18.0
+
+# CarlaAir bridge
+carla==0.9.15            # CARLA Python API (must match CarlaAir version)
+airsim>=1.8.1            # AirSim Python API
+msgpack-rpc-python       # Required by airsim
+
+# Passenger data
+openpyxl>=3.1.0          # Read Excel passenger arrival data
+
+# Reporting & visualization
+matplotlib>=3.7.0
+numpy>=1.24.0

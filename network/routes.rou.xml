@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+    <!-- Vehicle types -->
+
+    <vType id="passenger"   vClass="passenger" length="4.5"
+           accel="2.6" decel="4.5" maxSpeed="50" color="0.2,0.6,1.0"/>
+
+    <vType id="rental_car"  vClass="passenger" length="4.5"
+           accel="2.6" decel="4.5" maxSpeed="50" color="1.0,0.6,0.0"
+           personCapacity="4"/>
+
+    <!-- eVTOL: aircraft shape, cyan, large so it is visible -->
+    <vType id="evtol" vClass="passenger" length="18" width="18"
+           accel="6" decel="8" maxSpeed="27.78"
+           color="0,204,255"
+           guiShape="aircraft"
+           personCapacity="4"
+           lcStrategic="0" lcCooperative="0"/>
+
+    <!-- ============================================================
+         Background traffic on Town10HD main E-W road
+         Eastbound: -18 -> -19 -> -20 -> -21
+         Westbound:  21 ->  20 ->  19 ->  18
+         ============================================================ -->
+
+    <route id="bg_east" edges="-18 -19 -20 -21"/>
+    <route id="bg_west" edges="21 20 19 18"/>
+
+    <!-- Peak-hour v/c = 0.92
+         Road: 2 lanes/dir, 50 km/h, Krauss tau=1.0 → capacity ~4788 veh/hr/dir
+         Target: 0.92 × 4788 ≈ 4405 veh/hr per direction -->
+    <flow id="bg_flow_east" route="bg_east" type="passenger"
+          begin="0" end="18000" vehsPerHour="4405"
+          departLane="random" departSpeed="random"/>
+    <flow id="bg_flow_west" route="bg_west" type="passenger"
+          begin="0" end="18000" vehsPerHour="4405"
+          departLane="random" departSpeed="random"/>
+
+    <!-- ============================================================
+         Visitor routes — VP-Alpha (junction 189)
+         ============================================================ -->
+
+    <route id="visitor_from_west_vp1"
+           edges="-18 -19
+                  e_vp1_approach e_vp1_wait e_vp1_park
+                  e_vp1_rental e_vp1_exit_internal e_vp1_exit
+                  -20 -21"/>
+
+    <route id="visitor_from_east_vp1"
+           edges="21 20
+                  e_vp1_approach e_vp1_wait e_vp1_park
+                  e_vp1_rental e_vp1_exit_internal e_vp1_exit
+                  19 18"/>
+
+    <!-- ============================================================
+         Visitor routes — VP-Beta (junction 841)
+         ============================================================ -->
+
+    <route id="visitor_from_west_vp2"
+           edges="-18 -19 -20
+                  e_vp2_approach e_vp2_wait e_vp2_park
+                  e_vp2_rental e_vp2_exit_internal e_vp2_exit
+                  -21"/>
+
+    <route id="visitor_from_east_vp2"
+           edges="21
+                  e_vp2_approach e_vp2_wait e_vp2_park
+                  e_vp2_rental e_vp2_exit_internal e_vp2_exit
+                  20 19 18"/>
+
+    <!-- ============================================================
+         Rental car routes
+         ============================================================ -->
+
+    <route id="rental_vp1_east"
+           edges="e_vp1_rental e_vp1_exit_internal e_vp1_exit -20 -21"/>
+
+    <route id="rental_vp1_west"
+           edges="e_vp1_rental e_vp1_exit_internal e_vp1_exit 19 18"/>
+
+    <route id="rental_vp2_east"
+           edges="e_vp2_rental e_vp2_exit_internal e_vp2_exit -21"/>
+
+    <route id="rental_vp2_west"
+           edges="e_vp2_rental e_vp2_exit_internal e_vp2_exit 20 19 18"/>
+
+    <!-- ============================================================
+         eVTOL flight routes (sky path along road corridor)
+         ============================================================ -->
+
+    <route id="evtol_vpa_to_vpb"
+           edges="e_takeoff_a e_cruise_ab_1 e_cruise_ab_2 e_cruise_ab_3 e_cruise_ab_4 e_land_b"/>
+
+    <route id="evtol_vpb_to_vpa"
+           edges="e_takeoff_b e_cruise_ba_1 e_cruise_ba_2 e_cruise_ba_3 e_cruise_ba_4 e_land_a"/>
+
+</routes>

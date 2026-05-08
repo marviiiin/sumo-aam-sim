@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    sumo_aam_sim.sumocfg — SUMO config for Town10HD + vertiport scenario.
+-->
+<configuration>
+
+    <input>
+        <net-file          value="network/town10hd_vp.net.xml"/>
+        <additional-files  value="network/additionals.add.xml"/>
+        <route-files       value="network/routes.rou.xml"/>
+    </input>
+
+    <time>
+        <begin       value="0"/>
+        <end         value="7200"/>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+        <waiting-time-memory value="1000"/>
+    </processing>
+
+    <report>
+        <verbose      value="false"/>
+        <no-step-log  value="true"/>
+    </report>
+
+</configuration>

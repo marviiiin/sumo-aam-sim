@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-04-23T18:08:54.949778-05:00 by Eclipse SUMO netconvert 1.26.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="C:\Users\okmar\sumo_aam_sim\network\nodes.nod.xml"/>
+        <edge-files value="C:\Users\okmar\sumo_aam_sim\network\edges.edg.xml"/>
+        <connection-files value="C:\Users\okmar\sumo_aam_sim\network\connections.con.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\okmar\sumo_aam_sim\network\two_vertiport.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.remove value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <junctions.corner-detail value="4"/>
+    </junctions>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="4" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-85.00,1300.00,5.00" origBoundary="0.00,-85.00,1300.00,5.00" projParameter="!"/>
+
+    <edge id=":n_e_0" function="internal">
+        <lane id=":n_e_0_0" index="0" speed="3.65" length="4.67" shape="1300.00,-1.60 1301.20,-0.80 1301.60,0.00 1301.20,0.80 1300.00,1.60"/>
+    </edge>
+    <edge id=":n_mid_0" function="internal">
+        <lane id=":n_mid_0_0" index="0" speed="13.89" length="0.10" shape="857.00,4.80 857.00,4.80"/>
+        <lane id=":n_mid_0_1" index="1" speed="13.89" length="0.10" shape="857.00,1.60 857.00,1.60"/>
+    </edge>
+    <edge id=":n_mid_2" function="internal">
+        <lane id=":n_mid_2_0" index="0" speed="13.89" length="0.10" shape="857.00,-4.80 857.00,-4.80"/>
+        <lane id=":n_mid_2_1" index="1" speed="13.89" length="0.10" shape="857.00,-1.60 857.00,-1.60"/>
+    </edge>
+    <edge id=":n_sky_1_0" function="internal">
+        <lane id=":n_sky_1_0_0" index="0" speed="40.00" length="0.10" shape="740.00,6.60 740.00,6.60"/>
+    </edge>
+    <edge id=":n_sky_1_1" function="internal">
+        <lane id=":n_sky_1_1_0" index="0" speed="40.00" length="0.10" shape="740.00,3.40 740.00,3.40"/>
+    </edge>
+    <edge id=":n_sky_2_0" function="internal">
+        <lane id=":n_sky_2_0_0" index="0" speed="40.00" length="0.10" shape="980.00,6.60 980.00,6.60"/>
+    </edge>
+    <edge id=":n_sky_2_1" function="internal">
+        <lane id=":n_sky_2_1_0" index="0" speed="40.00" length="0.10" shape="980.00,3.40 980.00,3.40"/>
+    </edge>
+    <edge id=":n_sky_a_0" function="internal">
+        <lane id=":n_sky_a_0_0" index="0" speed="6.08" length="7.74" shape="614.20,6.60 612.10,6.30 610.60,5.40 609.70,3.90 609.40,1.80"/>
+    </edge>
+    <edge id=":n_sky_a_1" function="internal">
+        <lane id=":n_sky_a_1_0" index="0" speed="3.90" length="2.58" shape="612.60,1.80 612.70,2.50 613.00,3.00 613.50,3.30 614.20,3.40"/>
+    </edge>
+    <edge id=":n_sky_b_0" function="internal">
+        <lane id=":n_sky_b_0_0" index="0" speed="6.08" length="7.74" shape="1105.60,1.80 1105.30,3.90 1104.40,5.40 1102.90,6.30 1100.80,6.60"/>
+    </edge>
+    <edge id=":n_sky_b_1" function="internal">
+        <lane id=":n_sky_b_1_0" index="0" speed="3.90" length="2.58" shape="1100.80,3.40 1101.50,3.30 1102.00,3.00 1102.30,2.50 1102.40,1.80"/>
+    </edge>
+    <edge id=":n_sky_m_0" function="internal">
+        <lane id=":n_sky_m_0_0" index="0" speed="40.00" length="0.10" shape="857.00,6.60 857.00,6.60"/>
+    </edge>
+    <edge id=":n_sky_m_1" function="internal">
+        <lane id=":n_sky_m_1_0" index="0" speed="40.00" length="0.10" shape="857.00,3.40 857.00,3.40"/>
+    </edge>
+    <edge id=":n_vp1_entry_0" function="internal">
+        <lane id=":n_vp1_entry_0_0" index="0" speed="4.87" length="0.10" shape="609.40,-25.00 609.40,-25.00"/>
+    </edge>
+    <edge id=":n_vp1_exit_0" function="internal">
+        <lane id=":n_vp1_exit_0_0" index="0" speed="4.05" length="1.60" shape="666.60,-35.00 666.55,-34.59 666.42,-34.23 666.19,-33.92 665.87,-33.66"/>
+    </edge>
+    <edge id=":n_vp1_main_0" function="internal">
+        <lane id=":n_vp1_main_0_0" index="0" speed="13.89" length="26.96" shape="630.76,4.80 603.80,4.80"/>
+    </edge>
+    <edge id=":n_vp1_main_1" function="internal">
+        <lane id=":n_vp1_main_1_0" index="0" speed="9.72" length="16.50" shape="630.76,4.80 621.41,3.85 614.88,1.06"/>
+    </edge>
+    <edge id=":n_vp1_main_2" function="internal">
+        <lane id=":n_vp1_main_2_0" index="0" speed="13.89" length="26.96" shape="630.76,1.60 603.80,1.60"/>
+    </edge>
+    <edge id=":n_vp1_main_8" function="internal">
+        <lane id=":n_vp1_main_8_0" index="0" speed="9.72" length="13.15" shape="614.88,1.06 614.74,1.00 610.73,-3.75 609.40,-10.40"/>
+    </edge>
+    <edge id=":n_vp1_main_3" function="internal">
+        <lane id=":n_vp1_main_3_0" index="0" speed="5.49" length="10.77" shape="629.24,-9.92 626.38,-7.68 625.67,-6.08 627.13,-5.12 630.76,-4.80"/>
+    </edge>
+    <edge id=":n_vp1_main_4" function="internal">
+        <lane id=":n_vp1_main_4_0" index="0" speed="9.72" length="29.84" shape="629.24,-9.92 624.90,-6.47 618.70,-1.54 611.40,2.88 603.80,4.80"/>
+    </edge>
+    <edge id=":n_vp1_main_5" function="internal">
+        <lane id=":n_vp1_main_5_0" index="0" speed="6.51" length="9.03" shape="603.80,-4.80 606.25,-5.15 608.00,-6.20 609.05,-7.95 609.40,-10.40"/>
+    </edge>
+    <edge id=":n_vp1_main_6" function="internal">
+        <lane id=":n_vp1_main_6_0" index="0" speed="13.89" length="26.96" shape="603.80,-4.80 630.76,-4.80"/>
+        <lane id=":n_vp1_main_6_1" index="1" speed="13.89" length="26.96" shape="603.80,-1.60 630.76,-1.60"/>
+    </edge>
+    <edge id=":n_vp1_park_0" function="internal">
+        <lane id=":n_vp1_park_0_0" index="0" speed="4.17" length="11.73" shape="609.40,-81.00 609.95,-83.45 611.60,-85.20 614.35,-86.25 618.20,-86.60"/>
+    </edge>
+    <edge id=":n_vp1_park_1" function="internal">
+        <lane id=":n_vp1_park_1_0" index="0" speed="7.33" length="11.73" shape="609.40,-81.00 609.95,-83.45 611.60,-85.20 614.35,-86.25 618.20,-86.60"/>
+    </edge>
+    <edge id=":n_vp1_park_2" function="internal">
+        <lane id=":n_vp1_park_2_0" index="0" speed="3.65" length="4.67" shape="609.40,-81.00 610.20,-82.20 611.00,-82.60 611.80,-82.20 612.60,-81.00"/>
+    </edge>
+    <edge id=":n_vp1_rental_0" function="internal">
+        <lane id=":n_vp1_rental_0_0" index="0" speed="3.90" length="2.58" shape="665.00,-86.60 665.70,-86.50 666.20,-86.20 666.50,-85.70 666.60,-85.00"/>
+    </edge>
+    <edge id=":n_vp1_wait_0" function="internal">
+        <lane id=":n_vp1_wait_0_0" index="0" speed="4.17" length="0.10" shape="609.40,-45.00 609.40,-45.00"/>
+    </edge>
+    <edge id=":n_vp2_entry_0" function="internal">
+        <lane id=":n_vp2_entry_0_0" index="0" speed="4.87" length="0.10" shape="1102.40,-25.00 1102.40,-25.00"/>
+    </edge>
+    <edge id=":n_vp2_exit_0" function="internal">
+        <lane id=":n_vp2_exit_0_0" index="0" speed="4.05" length="1.60" shape="1051.60,-36.74 1051.65,-36.33 1051.78,-35.97 1052.01,-35.66 1052.33,-35.40"/>
+    </edge>
+    <edge id=":n_vp2_main_0" function="internal">
+        <lane id=":n_vp2_main_0_0" index="0" speed="13.89" length="17.87" shape="1108.00,4.80 1090.13,4.80"/>
+    </edge>
+    <edge id=":n_vp2_main_1" function="internal">
+        <lane id=":n_vp2_main_1_0" index="0" speed="8.83" length="5.97" shape="1108.00,4.80 1105.55,3.85 1103.80,1.00"/>
+    </edge>
+    <edge id=":n_vp2_main_2" function="internal">
+        <lane id=":n_vp2_main_2_0" index="0" speed="13.89" length="17.87" shape="1108.00,1.60 1090.13,1.60"/>
+    </edge>
+    <edge id=":n_vp2_main_8" function="internal">
+        <lane id=":n_vp2_main_8_0" index="0" speed="8.83" length="11.52" shape="1103.80,1.00 1102.75,-3.75 1102.40,-10.40"/>
+    </edge>
+    <edge id=":n_vp2_main_3" function="internal">
+        <lane id=":n_vp2_main_3_0" index="0" speed="9.72" length="17.45" shape="1091.64,-9.92 1094.76,-7.97 1098.18,-6.34 1102.42,-5.22 1108.00,-4.80"/>
+    </edge>
+    <edge id=":n_vp2_main_4" function="internal">
+        <lane id=":n_vp2_main_4_0" index="0" speed="7.22" length="19.98" shape="1091.64,-9.92 1095.47,-5.73 1096.55,-0.88 1094.80,3.13 1090.13,4.80"/>
+    </edge>
+    <edge id=":n_vp2_main_5" function="internal">
+        <lane id=":n_vp2_main_5_0" index="0" speed="8.16" length="14.82" shape="1090.13,-4.80 1095.50,-5.15 1099.33,-6.20 1101.63,-7.95 1102.40,-10.40"/>
+    </edge>
+    <edge id=":n_vp2_main_6" function="internal">
+        <lane id=":n_vp2_main_6_0" index="0" speed="13.89" length="17.87" shape="1090.13,-4.80 1108.00,-4.80"/>
+        <lane id=":n_vp2_main_6_1" index="1" speed="13.89" length="17.87" shape="1090.13,-1.60 1108.00,-1.60"/>
+    </edge>
+    <edge id=":n_vp2_park_0" function="internal">
+        <lane id=":n_vp2_park_0_0" index="0" speed="6.51" length="9.03" shape="1102.40,-77.80 1102.05,-80.25 1101.00,-82.00 1099.25,-83.05 1096.80,-83.40"/>
+    </edge>
+    <edge id=":n_vp2_park_1" function="internal">
+        <lane id=":n_vp2_park_1_0" index="0" speed="3.65" length="4.67" shape="1102.40,-77.80 1103.20,-79.00 1104.00,-79.40 1104.80,-79.00 1105.60,-77.80"/>
+    </edge>
+    <edge id=":n_vp2_park_2" function="internal">
+        <lane id=":n_vp2_park_2_0" index="0" speed="4.17" length="9.03" shape="1102.40,-77.80 1102.05,-80.25 1101.00,-82.00 1099.25,-83.05 1096.80,-83.40"/>
+    </edge>
+    <edge id=":n_vp2_rental_0" function="internal">
+        <lane id=":n_vp2_rental_0_0" index="0" speed="3.90" length="2.58" shape="1053.20,-83.40 1052.50,-83.30 1052.00,-83.00 1051.70,-82.50 1051.60,-81.80"/>
+    </edge>
+    <edge id=":n_vp2_wait_0" function="internal">
+        <lane id=":n_vp2_wait_0_0" index="0" speed="4.17" length="0.10" shape="1102.40,-45.00 1102.40,-45.00"/>
+    </edge>
+    <edge id=":n_w_0" function="internal">
+        <lane id=":n_w_0_0" index="0" speed="3.65" length="4.67" shape="0.00,1.60 -1.20,0.80 -1.60,0.00 -1.20,-0.80 0.00,-1.60"/>
+    </edge>
+
+    <edge id="e_cruise_ab_1" from="n_sky_a" to="n_sky_1" priority="9">
+        <lane id="e_cruise_ab_1_0" index="0" speed="40.00" length="125.80" shape="614.20,3.40 740.00,3.40"/>
+    </edge>
+    <edge id="e_cruise_ab_2" from="n_sky_1" to="n_sky_m" priority="9">
+        <lane id="e_cruise_ab_2_0" index="0" speed="40.00" length="117.00" shape="740.00,3.40 857.00,3.40"/>
+    </edge>
+    <edge id="e_cruise_ab_3" from="n_sky_m" to="n_sky_2" priority="9">
+        <lane id="e_cruise_ab_3_0" index="0" speed="40.00" length="123.00" shape="857.00,3.40 980.00,3.40"/>
+    </edge>
+    <edge id="e_cruise_ab_4" from="n_sky_2" to="n_sky_b" priority="9">
+        <lane id="e_cruise_ab_4_0" index="0" speed="40.00" length="120.80" shape="980.00,3.40 1100.80,3.40"/>
+    </edge>
+    <edge id="e_cruise_ba_1" from="n_sky_b" to="n_sky_2" priority="9">
+        <lane id="e_cruise_ba_1_0" index="0" speed="40.00" length="120.80" shape="1100.80,6.60 980.00,6.60"/>
+    </edge>
+    <edge id="e_cruise_ba_2" from="n_sky_2" to="n_sky_m" priority="9">
+        <lane id="e_cruise_ba_2_0" index="0" speed="40.00" length="123.00" shape="980.00,6.60 857.00,6.60"/>
+    </edge>
+    <edge id="e_cruise_ba_3" from="n_sky_m" to="n_sky_1" priority="9">
+        <lane id="e_cruise_ba_3_0" index="0" speed="40.00" length="117.00" shape="857.00,6.60 740.00,6.60"/>
+    </edge>
+    <edge id="e_cruise_ba_4" from="n_sky_1" to="n_sky_a" priority="9">
+        <lane id="e_cruise_ba_4_0" index="0" speed="40.00" length="125.80" shape="740.00,6.60 614.20,6.60"/>
+    </edge>
+    <edge id="e_land_a" from="n_sky_a" to="n_vp1_park" priority="9">
+        <lane id="e_land_a_0" index="0" speed="20.00" length="82.80" shape="609.40,1.80 609.40,-81.00"/>
+    </edge>
+    <edge id="e_land_b" from="n_sky_b" to="n_vp2_park" priority="9">
+        <lane id="e_land_b_0" index="0" speed="20.00" length="79.60" shape="1102.40,1.80 1102.40,-77.80"/>
+    </edge>
+    <edge id="e_main_0" from="n_w" to="n_vp1_main" priority="7">
+        <lane id="e_main_0_0" index="0" speed="13.89" length="603.80" shape="0.00,-4.80 603.80,-4.80"/>
+        <lane id="e_main_0_1" index="1" speed="13.89" length="603.80" shape="0.00,-1.60 603.80,-1.60"/>
+    </edge>
+    <edge id="e_main_0r" from="n_vp1_main" to="n_w" priority="7">
+        <lane id="e_main_0r_0" index="0" speed="13.89" length="603.80" shape="603.80,4.80 0.00,4.80"/>
+        <lane id="e_main_0r_1" index="1" speed="13.89" length="603.80" shape="603.80,1.60 0.00,1.60"/>
+    </edge>
+    <edge id="e_main_1" from="n_vp1_main" to="n_mid" priority="7">
+        <lane id="e_main_1_0" index="0" speed="13.89" length="226.24" shape="630.76,-4.80 857.00,-4.80"/>
+        <lane id="e_main_1_1" index="1" speed="13.89" length="226.24" shape="630.76,-1.60 857.00,-1.60"/>
+    </edge>
+    <edge id="e_main_1r" from="n_mid" to="n_vp1_main" priority="7">
+        <lane id="e_main_1r_0" index="0" speed="13.89" length="226.24" shape="857.00,4.80 630.76,4.80"/>
+        <lane id="e_main_1r_1" index="1" speed="13.89" length="226.24" shape="857.00,1.60 630.76,1.60"/>
+    </edge>
+    <edge id="e_main_2" from="n_mid" to="n_vp2_main" priority="7">
+        <lane id="e_main_2_0" index="0" speed="13.89" length="233.13" shape="857.00,-4.80 1090.13,-4.80"/>
+        <lane id="e_main_2_1" index="1" speed="13.89" length="233.13" shape="857.00,-1.60 1090.13,-1.60"/>
+    </edge>
+    <edge id="e_main_2r" from="n_vp2_main" to="n_mid" priority="7">
+        <lane id="e_main_2r_0" index="0" speed="13.89" length="233.13" shape="1090.13,4.80 857.00,4.80"/>
+        <lane id="e_main_2r_1" index="1" speed="13.89" length="233.13" shape="1090.13,1.60 857.00,1.60"/>
+    </edge>
+    <edge id="e_main_3" from="n_vp2_main" to="n_e" priority="7">
+        <lane id="e_main_3_0" index="0" speed="13.89" length="192.00" shape="1108.00,-4.80 1300.00,-4.80"/>
+        <lane id="e_main_3_1" index="1" speed="13.89" length="192.00" shape="1108.00,-1.60 1300.00,-1.60"/>
+    </edge>
+    <edge id="e_main_3r" from="n_e" to="n_vp2_main" priority="7">
+        <lane id="e_main_3r_0" index="0" speed="13.89" length="192.00" shape="1300.00,4.80 1108.00,4.80"/>
+        <lane id="e_main_3r_1" index="1" speed="13.89" length="192.00" shape="1300.00,1.60 1108.00,1.60"/>
+    </edge>
+    <edge id="e_takeoff_a" from="n_vp1_park" to="n_sky_a" priority="9">
+        <lane id="e_takeoff_a_0" index="0" speed="20.00" length="82.80" shape="612.60,-81.00 612.60,1.80"/>
+    </edge>
+    <edge id="e_takeoff_b" from="n_vp2_park" to="n_sky_b" priority="9">
+        <lane id="e_takeoff_b_0" index="0" speed="20.00" length="79.60" shape="1105.60,-77.80 1105.60,1.80"/>
+    </edge>
+    <edge id="e_vp1_approach" from="n_vp1_main" to="n_vp1_entry" priority="5">
+        <lane id="e_vp1_approach_0" index="0" speed="5.56" length="14.60" shape="609.40,-10.40 609.40,-25.00"/>
+    </edge>
+    <edge id="e_vp1_exit" from="n_vp1_exit" to="n_vp1_main" priority="5">
+        <lane id="e_vp1_exit_0" index="0" speed="5.56" length="43.65" shape="665.87,-33.66 629.24,-9.92"/>
+    </edge>
+    <edge id="e_vp1_exit_internal" from="n_vp1_rental" to="n_vp1_exit" priority="3">
+        <lane id="e_vp1_exit_internal_0" index="0" speed="4.17" length="50.00" shape="666.60,-85.00 666.60,-35.00"/>
+    </edge>
+    <edge id="e_vp1_park" from="n_vp1_wait" to="n_vp1_park" priority="3">
+        <lane id="e_vp1_park_0" index="0" speed="4.17" length="36.00" shape="609.40,-45.00 609.40,-81.00"/>
+    </edge>
+    <edge id="e_vp1_rental" from="n_vp1_park" to="n_vp1_rental" priority="3">
+        <lane id="e_vp1_rental_0" index="0" speed="4.17" length="46.80" shape="618.20,-86.60 665.00,-86.60"/>
+    </edge>
+    <edge id="e_vp1_wait" from="n_vp1_entry" to="n_vp1_wait" priority="3">
+        <lane id="e_vp1_wait_0" index="0" speed="4.17" length="20.00" shape="609.40,-25.00 609.40,-45.00"/>
+    </edge>
+    <edge id="e_vp2_approach" from="n_vp2_main" to="n_vp2_entry" priority="5">
+        <lane id="e_vp2_approach_0" index="0" speed="5.56" length="14.60" shape="1102.40,-10.40 1102.40,-25.00"/>
+    </edge>
+    <edge id="e_vp2_exit" from="n_vp2_exit" to="n_vp2_main" priority="5">
+        <lane id="e_vp2_exit_0" index="0" speed="5.56" length="46.84" shape="1052.33,-35.40 1091.64,-9.92"/>
+    </edge>
+    <edge id="e_vp2_exit_internal" from="n_vp2_rental" to="n_vp2_exit" priority="3">
+        <lane id="e_vp2_exit_internal_0" index="0" speed="4.17" length="45.06" shape="1051.60,-81.80 1051.60,-36.74"/>
+    </edge>
+    <edge id="e_vp2_park" from="n_vp2_wait" to="n_vp2_park" priority="3">
+        <lane id="e_vp2_park_0" index="0" speed="4.17" length="32.80" shape="1102.40,-45.00 1102.40,-77.80"/>
+    </edge>
+    <edge id="e_vp2_rental" from="n_vp2_park" to="n_vp2_rental" priority="3">
+        <lane id="e_vp2_rental_0" index="0" speed="4.17" length="43.60" shape="1096.80,-83.40 1053.20,-83.40"/>
+    </edge>
+    <edge id="e_vp2_wait" from="n_vp2_entry" to="n_vp2_wait" priority="3">
+        <lane id="e_vp2_wait_0" index="0" speed="4.17" length="20.00" shape="1102.40,-25.00 1102.40,-45.00"/>
+    </edge>
+
+    <junction id="n_e" type="priority" x="1300.00" y="0.00" incLanes="e_main_3_0 e_main_3_1" intLanes=":n_e_0_0" shape="1300.00,0.00 1300.00,-6.40 1300.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_mid" type="priority" x="857.00" y="0.00" incLanes="e_main_2r_0 e_main_2r_1 e_main_1_0 e_main_1_1" intLanes=":n_mid_0_0 :n_mid_0_1 :n_mid_2_0 :n_mid_2_1" shape="857.00,6.40 857.00,-6.40 857.00,6.40">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="n_sky_1" type="priority" x="740.00" y="5.00" incLanes="e_cruise_ba_3_0 e_cruise_ab_1_0" intLanes=":n_sky_1_0_0 :n_sky_1_1_0" shape="740.00,8.20 740.00,1.80 740.00,8.20">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="n_sky_2" type="priority" x="980.00" y="5.00" incLanes="e_cruise_ba_1_0 e_cruise_ab_3_0" intLanes=":n_sky_2_0_0 :n_sky_2_1_0" shape="980.00,8.20 980.00,1.80 980.00,8.20">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="n_sky_a" type="priority" x="611.00" y="5.00" incLanes="e_cruise_ba_4_0 e_takeoff_a_0" intLanes=":n_sky_a_0_0 :n_sky_a_1_0" shape="614.20,8.20 614.20,1.80 607.80,1.80 608.06,4.10 608.82,5.90 610.10,7.18 611.90,7.94">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="n_sky_b" type="priority" x="1104.00" y="5.00" incLanes="e_takeoff_b_0 e_cruise_ab_4_0" intLanes=":n_sky_b_0_0 :n_sky_b_1_0" shape="1107.20,1.80 1100.80,1.80 1100.80,8.20 1103.10,7.94 1104.90,7.18 1106.18,5.90 1106.94,4.10">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="n_sky_m" type="priority" x="857.00" y="5.00" incLanes="e_cruise_ba_2_0 e_cruise_ab_2_0" intLanes=":n_sky_m_0_0 :n_sky_m_1_0" shape="857.00,8.20 857.00,1.80 857.00,8.20">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="n_vp1_entry" type="priority" x="611.00" y="-25.00" incLanes="e_vp1_approach_0" intLanes=":n_vp1_entry_0_0" shape="607.80,-25.00 611.00,-25.00 607.80,-25.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp1_exit" type="priority" x="665.00" y="-35.00" incLanes="e_vp1_exit_internal_0" intLanes=":n_vp1_exit_0_0" shape="668.20,-35.00 665.00,-35.00 666.74,-32.31 667.67,-33.20 667.97,-33.74 668.14,-34.34">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp1_main" type="priority" x="611.00" y="0.00" incLanes="e_main_1r_0 e_main_1r_1 e_vp1_exit_0 e_main_0_0 e_main_0_1" intLanes=":n_vp1_main_0_0 :n_vp1_main_8_0 :n_vp1_main_2_0 :n_vp1_main_3_0 :n_vp1_main_4_0 :n_vp1_main_5_0 :n_vp1_main_6_0 :n_vp1_main_6_1" shape="630.76,6.40 630.76,-6.40 630.11,-8.58 628.37,-11.26 623.45,-8.32 618.75,-6.19 614.78,-5.45 612.03,-6.66 611.00,-10.40 607.80,-10.40 607.16,-7.84 606.36,-7.04 605.24,-6.56 603.80,-6.40 603.80,6.40">
+        <request index="0" response="00000000" foes="00010000" cont="0"/>
+        <request index="1" response="11100100" foes="11110100" cont="1"/>
+        <request index="2" response="00000000" foes="00010010" cont="0"/>
+        <request index="3" response="11000000" foes="11000000" cont="0"/>
+        <request index="4" response="11000111" foes="11000111" cont="0"/>
+        <request index="5" response="00000000" foes="00000010" cont="0"/>
+        <request index="6" response="00000000" foes="00011010" cont="0"/>
+        <request index="7" response="00000000" foes="00011010" cont="0"/>
+    </junction>
+    <junction id="n_vp1_park" type="priority" x="611.00" y="-85.00" incLanes="e_vp1_park_0 e_land_a_0" intLanes=":n_vp1_park_0_0 :n_vp1_park_1_0 :n_vp1_park_2_0" shape="607.80,-81.00 614.20,-81.00 614.84,-83.56 615.64,-84.36 616.76,-84.84 618.20,-85.00 618.20,-88.20 614.46,-87.91 611.54,-87.05 609.46,-85.61 608.22,-83.59">
+        <request index="0" response="010" foes="110" cont="0"/>
+        <request index="1" response="000" foes="001" cont="0"/>
+        <request index="2" response="001" foes="001" cont="0"/>
+    </junction>
+    <junction id="n_vp1_rental" type="priority" x="665.00" y="-85.00" incLanes="e_vp1_rental_0" intLanes=":n_vp1_rental_0_0" shape="665.00,-85.00 668.20,-85.00 667.69,-87.05 667.05,-87.69 666.15,-88.07 665.00,-88.20">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp1_wait" type="priority" x="611.00" y="-45.00" incLanes="e_vp1_wait_0" intLanes=":n_vp1_wait_0_0" shape="607.80,-45.00 611.00,-45.00 607.80,-45.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp2_entry" type="priority" x="1104.00" y="-25.00" incLanes="e_vp2_approach_0" intLanes=":n_vp2_entry_0_0" shape="1100.80,-25.00 1104.00,-25.00 1100.80,-25.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp2_exit" type="priority" x="1050.00" y="-35.00" incLanes="e_vp2_exit_internal_0" intLanes=":n_vp2_exit_0_0" shape="1051.46,-34.05 1053.20,-36.74 1050.00,-36.74 1050.23,-35.47 1050.53,-34.94 1050.93,-34.46">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp2_main" type="priority" x="1104.00" y="0.00" incLanes="e_main_3r_0 e_main_3r_1 e_vp2_exit_0 e_main_2_0 e_main_2_1" intLanes=":n_vp2_main_0_0 :n_vp2_main_8_0 :n_vp2_main_2_0 :n_vp2_main_3_0 :n_vp2_main_4_0 :n_vp2_main_5_0 :n_vp2_main_6_0 :n_vp2_main_6_1" shape="1108.00,6.40 1108.00,-6.40 1105.44,-7.04 1104.64,-7.84 1104.16,-8.96 1104.00,-10.40 1100.80,-10.40 1099.47,-8.37 1097.82,-8.54 1095.49,-9.51 1092.51,-11.26 1090.77,-8.58 1090.13,-6.40 1090.13,6.40">
+        <request index="0" response="00000000" foes="00010000" cont="0"/>
+        <request index="1" response="11100100" foes="11101100" cont="1"/>
+        <request index="2" response="00000000" foes="00010010" cont="0"/>
+        <request index="3" response="11100010" foes="11100010" cont="0"/>
+        <request index="4" response="11100101" foes="11100101" cont="0"/>
+        <request index="5" response="00000000" foes="00011010" cont="0"/>
+        <request index="6" response="00000000" foes="00011010" cont="0"/>
+        <request index="7" response="00000000" foes="00011010" cont="0"/>
+    </junction>
+    <junction id="n_vp2_park" type="priority" x="1104.00" y="-85.00" incLanes="e_land_b_0 e_vp2_park_0" intLanes=":n_vp2_park_0_0 :n_vp2_park_1_0 :n_vp2_park_2_0" shape="1100.80,-77.80 1107.20,-77.80 1106.78,-80.39 1105.54,-82.41 1103.46,-83.85 1100.54,-84.71 1096.80,-85.00 1096.80,-81.80 1099.36,-81.16 1100.16,-80.36 1100.64,-79.24">
+        <request index="0" response="000" foes="100" cont="0"/>
+        <request index="1" response="100" foes="100" cont="0"/>
+        <request index="2" response="001" foes="011" cont="0"/>
+    </junction>
+    <junction id="n_vp2_rental" type="priority" x="1050.00" y="-85.00" incLanes="e_vp2_rental_0" intLanes=":n_vp2_rental_0_0" shape="1050.00,-81.80 1053.20,-81.80 1053.20,-85.00 1051.15,-84.49 1050.51,-83.85 1050.13,-82.95">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_vp2_wait" type="priority" x="1104.00" y="-45.00" incLanes="e_vp2_wait_0" intLanes=":n_vp2_wait_0_0" shape="1100.80,-45.00 1104.00,-45.00 1100.80,-45.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_w" type="priority" x="0.00" y="0.00" incLanes="e_main_0r_0 e_main_0r_1" intLanes=":n_w_0_0" shape="0.00,0.00 0.00,6.40 0.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+
+    <junction id=":n_vp1_main_8_0" type="internal" x="614.88" y="1.06" incLanes=":n_vp1_main_1_0 e_main_0_0 e_main_0_1" intLanes=":n_vp1_main_2_0 :n_vp1_main_4_0 :n_vp1_main_5_0 :n_vp1_main_6_0 :n_vp1_main_6_1"/>
+    <junction id=":n_vp2_main_8_0" type="internal" x="1103.80" y="1.00" incLanes=":n_vp2_main_1_0 e_main_2_0 e_main_2_1" intLanes=":n_vp2_main_2_0 :n_vp2_main_3_0 :n_vp2_main_5_0 :n_vp2_main_6_0 :n_vp2_main_6_1"/>
+
+    <connection from="e_cruise_ab_1" to="e_cruise_ab_2" fromLane="0" toLane="0" via=":n_sky_1_1_0" dir="s" state="M"/>
+    <connection from="e_cruise_ab_2" to="e_cruise_ab_3" fromLane="0" toLane="0" via=":n_sky_m_1_0" dir="s" state="M"/>
+    <connection from="e_cruise_ab_3" to="e_cruise_ab_4" fromLane="0" toLane="0" via=":n_sky_2_1_0" dir="s" state="M"/>
+    <connection from="e_cruise_ab_4" to="e_land_b" fromLane="0" toLane="0" via=":n_sky_b_1_0" dir="r" state="M"/>
+    <connection from="e_cruise_ba_1" to="e_cruise_ba_2" fromLane="0" toLane="0" via=":n_sky_2_0_0" dir="s" state="M"/>
+    <connection from="e_cruise_ba_2" to="e_cruise_ba_3" fromLane="0" toLane="0" via=":n_sky_m_0_0" dir="s" state="M"/>
+    <connection from="e_cruise_ba_3" to="e_cruise_ba_4" fromLane="0" toLane="0" via=":n_sky_1_0_0" dir="s" state="M"/>
+    <connection from="e_cruise_ba_4" to="e_land_a" fromLane="0" toLane="0" via=":n_sky_a_0_0" dir="l" state="M"/>
+    <connection from="e_land_a" to="e_vp1_rental" fromLane="0" toLane="0" keepClear="0" via=":n_vp1_park_1_0" dir="l" state="M"/>
+    <connection from="e_land_a" to="e_takeoff_a" fromLane="0" toLane="0" via=":n_vp1_park_2_0" dir="t" state="m"/>
+    <connection from="e_land_b" to="e_vp2_rental" fromLane="0" toLane="0" keepClear="0" via=":n_vp2_park_0_0" dir="r" state="M"/>
+    <connection from="e_land_b" to="e_takeoff_b" fromLane="0" toLane="0" via=":n_vp2_park_1_0" dir="t" state="m"/>
+    <connection from="e_main_0" to="e_vp1_approach" fromLane="0" toLane="0" via=":n_vp1_main_5_0" dir="r" state="M"/>
+    <connection from="e_main_0" to="e_main_1" fromLane="0" toLane="0" via=":n_vp1_main_6_0" dir="s" state="M"/>
+    <connection from="e_main_0" to="e_main_1" fromLane="1" toLane="1" via=":n_vp1_main_6_1" dir="s" state="M"/>
+    <connection from="e_main_0r" to="e_main_0" fromLane="1" toLane="1" via=":n_w_0_0" dir="t" state="M"/>
+    <connection from="e_main_1" to="e_main_2" fromLane="0" toLane="0" via=":n_mid_2_0" dir="s" state="M"/>
+    <connection from="e_main_1" to="e_main_2" fromLane="1" toLane="1" via=":n_mid_2_1" dir="s" state="M"/>
+    <connection from="e_main_1r" to="e_main_0r" fromLane="0" toLane="0" via=":n_vp1_main_0_0" dir="s" state="M"/>
+    <connection from="e_main_1r" to="e_vp1_approach" fromLane="0" toLane="0" via=":n_vp1_main_1_0" dir="l" state="m"/>
+    <connection from="e_main_1r" to="e_main_0r" fromLane="1" toLane="1" via=":n_vp1_main_2_0" dir="s" state="M"/>
+    <connection from="e_main_2" to="e_vp2_approach" fromLane="0" toLane="0" via=":n_vp2_main_5_0" dir="r" state="M"/>
+    <connection from="e_main_2" to="e_main_3" fromLane="0" toLane="0" via=":n_vp2_main_6_0" dir="s" state="M"/>
+    <connection from="e_main_2" to="e_main_3" fromLane="1" toLane="1" via=":n_vp2_main_6_1" dir="s" state="M"/>
+    <connection from="e_main_2r" to="e_main_1r" fromLane="0" toLane="0" via=":n_mid_0_0" dir="s" state="M"/>
+    <connection from="e_main_2r" to="e_main_1r" fromLane="1" toLane="1" via=":n_mid_0_1" dir="s" state="M"/>
+    <connection from="e_main_3" to="e_main_3r" fromLane="1" toLane="1" via=":n_e_0_0" dir="t" state="M"/>
+    <connection from="e_main_3r" to="e_main_2r" fromLane="0" toLane="0" via=":n_vp2_main_0_0" dir="s" state="M"/>
+    <connection from="e_main_3r" to="e_vp2_approach" fromLane="0" toLane="0" via=":n_vp2_main_1_0" dir="l" state="m"/>
+    <connection from="e_main_3r" to="e_main_2r" fromLane="1" toLane="1" via=":n_vp2_main_2_0" dir="s" state="M"/>
+    <connection from="e_takeoff_a" to="e_cruise_ab_1" fromLane="0" toLane="0" via=":n_sky_a_1_0" dir="r" state="M"/>
+    <connection from="e_takeoff_b" to="e_cruise_ba_1" fromLane="0" toLane="0" via=":n_sky_b_0_0" dir="l" state="M"/>
+    <connection from="e_vp1_approach" to="e_vp1_wait" fromLane="0" toLane="0" via=":n_vp1_entry_0_0" dir="s" state="M"/>
+    <connection from="e_vp1_exit" to="e_main_1" fromLane="0" toLane="0" via=":n_vp1_main_3_0" dir="r" state="m"/>
+    <connection from="e_vp1_exit" to="e_main_0r" fromLane="0" toLane="0" via=":n_vp1_main_4_0" dir="s" state="m"/>
+    <connection from="e_vp1_exit_internal" to="e_vp1_exit" fromLane="0" toLane="0" via=":n_vp1_exit_0_0" dir="l" state="M"/>
+    <connection from="e_vp1_park" to="e_vp1_rental" fromLane="0" toLane="0" via=":n_vp1_park_0_0" dir="L" state="m"/>
+    <connection from="e_vp1_rental" to="e_vp1_exit_internal" fromLane="0" toLane="0" via=":n_vp1_rental_0_0" dir="l" state="M"/>
+    <connection from="e_vp1_wait" to="e_vp1_park" fromLane="0" toLane="0" via=":n_vp1_wait_0_0" dir="s" state="M"/>
+    <connection from="e_vp2_approach" to="e_vp2_wait" fromLane="0" toLane="0" via=":n_vp2_entry_0_0" dir="s" state="M"/>
+    <connection from="e_vp2_exit" to="e_main_3" fromLane="0" toLane="0" via=":n_vp2_main_3_0" dir="s" state="m"/>
+    <connection from="e_vp2_exit" to="e_main_2r" fromLane="0" toLane="0" via=":n_vp2_main_4_0" dir="l" state="m"/>
+    <connection from="e_vp2_exit_internal" to="e_vp2_exit" fromLane="0" toLane="0" via=":n_vp2_exit_0_0" dir="r" state="M"/>
+    <connection from="e_vp2_park" to="e_vp2_rental" fromLane="0" toLane="0" via=":n_vp2_park_2_0" dir="r" state="m"/>
+    <connection from="e_vp2_rental" to="e_vp2_exit_internal" fromLane="0" toLane="0" via=":n_vp2_rental_0_0" dir="r" state="M"/>
+    <connection from="e_vp2_wait" to="e_vp2_park" fromLane="0" toLane="0" via=":n_vp2_wait_0_0" dir="s" state="M"/>
+
+    <connection from=":n_e_0" to="e_main_3r" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":n_mid_0" to="e_main_1r" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_mid_0" to="e_main_1r" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":n_mid_2" to="e_main_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_mid_2" to="e_main_2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":n_sky_1_0" to="e_cruise_ba_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_sky_1_1" to="e_cruise_ab_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_sky_2_0" to="e_cruise_ba_2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_sky_2_1" to="e_cruise_ab_4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_sky_a_0" to="e_land_a" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_sky_a_1" to="e_cruise_ab_1" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_sky_b_0" to="e_cruise_ba_1" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_sky_b_1" to="e_land_b" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_sky_m_0" to="e_cruise_ba_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_sky_m_1" to="e_cruise_ab_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp1_entry_0" to="e_vp1_wait" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp1_exit_0" to="e_vp1_exit" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp1_main_0" to="e_main_0r" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp1_main_1" to="e_vp1_approach" fromLane="0" toLane="0" via=":n_vp1_main_8_0" dir="l" state="m"/>
+    <connection from=":n_vp1_main_8" to="e_vp1_approach" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp1_main_2" to="e_main_0r" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":n_vp1_main_3" to="e_main_1" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp1_main_4" to="e_main_0r" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp1_main_5" to="e_vp1_approach" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp1_main_6" to="e_main_1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp1_main_6" to="e_main_1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":n_vp1_park_0" to="e_vp1_rental" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":n_vp1_park_1" to="e_vp1_rental" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp1_park_2" to="e_takeoff_a" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":n_vp1_rental_0" to="e_vp1_exit_internal" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp1_wait_0" to="e_vp1_park" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp2_entry_0" to="e_vp2_wait" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp2_exit_0" to="e_vp2_exit" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp2_main_0" to="e_main_2r" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp2_main_1" to="e_vp2_approach" fromLane="0" toLane="0" via=":n_vp2_main_8_0" dir="l" state="m"/>
+    <connection from=":n_vp2_main_8" to="e_vp2_approach" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp2_main_2" to="e_main_2r" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":n_vp2_main_3" to="e_main_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp2_main_4" to="e_main_2r" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_vp2_main_5" to="e_vp2_approach" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp2_main_6" to="e_main_3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_vp2_main_6" to="e_main_3" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":n_vp2_park_0" to="e_vp2_rental" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp2_park_1" to="e_takeoff_b" fromLane="0" toLane="0" dir="t" state="M"/>
+    <connection from=":n_vp2_park_2" to="e_vp2_rental" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp2_rental_0" to="e_vp2_exit_internal" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":n_vp2_wait_0" to="e_vp2_park" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_w_0" to="e_main_0" fromLane="0" toLane="1" dir="t" state="M"/>
+
+</net>

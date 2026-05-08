@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections>
+    <connection from="-19" to="e_vp1_approach" fromLane="0" toLane="0"/>
+    <connection from="20" to="e_vp1_approach" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_exit" to="-20" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_exit" to="19" fromLane="0" toLane="0"/>
+    <connection from="-20" to="e_vp2_approach" fromLane="0" toLane="0"/>
+    <connection from="21" to="e_vp2_approach" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_exit" to="-21" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_exit" to="20" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_approach" to="e_vp1_wait" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_wait" to="e_vp1_park" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_park" to="e_vp1_rental" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_park" to="e_takeoff_a" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_rental" to="e_vp1_exit_internal" fromLane="0" toLane="0"/>
+    <connection from="e_vp1_exit_internal" to="e_vp1_exit" fromLane="0" toLane="0"/>
+    <connection from="e_land_a" to="e_vp1_rental" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_approach" to="e_vp2_wait" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_wait" to="e_vp2_park" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_park" to="e_vp2_rental" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_park" to="e_takeoff_b" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_rental" to="e_vp2_exit_internal" fromLane="0" toLane="0"/>
+    <connection from="e_vp2_exit_internal" to="e_vp2_exit" fromLane="0" toLane="0"/>
+    <connection from="e_land_b" to="e_vp2_rental" fromLane="0" toLane="0"/>
+    <connection from="e_takeoff_a" to="e_cruise_ab_1" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ab_1" to="e_cruise_ab_2" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ab_2" to="e_cruise_ab_3" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ab_3" to="e_cruise_ab_4" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ab_4" to="e_land_b" fromLane="0" toLane="0"/>
+    <connection from="e_takeoff_b" to="e_cruise_ba_1" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ba_1" to="e_cruise_ba_2" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ba_2" to="e_cruise_ba_3" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ba_3" to="e_cruise_ba_4" fromLane="0" toLane="0"/>
+    <connection from="e_cruise_ba_4" to="e_land_a" fromLane="0" toLane="0"/>
+</connections>

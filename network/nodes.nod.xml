@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <node id="n_w" x="0" y="0" type="priority"/>
+    <node id="n_vp1_main" x="611" y="0" type="priority"/>
+    <node id="n_mid" x="857" y="0" type="priority"/>
+    <node id="n_vp2_main" x="1104" y="0" type="priority"/>
+    <node id="n_e" x="1300" y="0" type="priority"/>
+    <node id="n_vp1_entry" x="611" y="-25" type="priority"/>
+    <node id="n_vp1_wait" x="611" y="-45" type="priority"/>
+    <node id="n_vp1_park" x="611" y="-85" type="priority"/>
+    <node id="n_vp1_rental" x="665" y="-85" type="priority"/>
+    <node id="n_vp1_exit" x="665" y="-35" type="priority"/>
+    <node id="n_vp2_entry" x="1104" y="-25" type="priority"/>
+    <node id="n_vp2_wait" x="1104" y="-45" type="priority"/>
+    <node id="n_vp2_park" x="1104" y="-85" type="priority"/>
+    <node id="n_vp2_rental" x="1050" y="-85" type="priority"/>
+    <node id="n_vp2_exit" x="1050" y="-35" type="priority"/>
+    <node id="n_sky_a" x="611" y="5" type="priority"/>
+    <node id="n_sky_1" x="740" y="5" type="priority"/>
+    <node id="n_sky_m" x="857" y="5" type="priority"/>
+    <node id="n_sky_2" x="980" y="5" type="priority"/>
+    <node id="n_sky_b" x="1104" y="5" type="priority"/>
+</nodes>

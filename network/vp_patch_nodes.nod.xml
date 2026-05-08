@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <node id="n_vpa_entry" x="-55" y="-16" type="priority"/>
+    <node id="n_vpa_wait" x="-55" y="-6" type="priority"/>
+    <node id="n_vpa_park" x="-55" y="16" type="priority"/>
+    <node id="n_vpa_rental" x="-48" y="16" type="priority"/>
+    <node id="n_vpa_exit" x="-48" y="-6" type="priority"/>
+    <node id="n_vpb_entry" x="34" y="-24" type="priority"/>
+    <node id="n_vpb_wait" x="34" y="-14" type="priority"/>
+    <node id="n_vpb_park" x="34" y="8" type="priority"/>
+    <node id="n_vpb_rental" x="42" y="8" type="priority"/>
+    <node id="n_vpb_exit" x="42" y="-14" type="priority"/>
+    <node id="n_sky_a" x="-47" y="-19" type="priority"/>
+    <node id="n_sky_1" x="-20" y="-21" type="priority"/>
+    <node id="n_sky_m" x="0" y="-24" type="priority"/>
+    <node id="n_sky_2" x="20" y="-27" type="priority"/>
+    <node id="n_sky_b" x="42" y="-27" type="priority"/>
+</nodes>

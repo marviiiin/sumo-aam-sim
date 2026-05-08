@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+
+    <!-- Vertiport Alpha -->
+
+    <busStop id="bs_vp1_wait"
+             lane="e_vp1_wait_0"
+             startPos="1" endPos="9"
+             friendlyPos="true"
+             name="VP-Alpha Waiting Area"/>
+
+    <parkingArea id="pa_vp1"
+                 lane="e_vp1_park_0"
+                 startPos="2" endPos="20"
+                 roadsideCapacity="20"
+                 friendlyPos="true"
+                 name="VP-Alpha Parking Lot"/>
+
+    <!-- ═══ Induction Loop Detectors (E1) at Signalised Junctions ═══ -->
+
+    <!-- TLS 189 (VP-Alpha junction): -19 -> -20 (EB), 20 -> 19 (WB), -14 (cross), 15 (cross) -->
+    <inductionLoop id="det_189_eb_0" lane="-19_0" pos="5.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_eb_1" lane="-19_1" pos="5.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_wb_0" lane="20_0"  pos="50.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_wb_1" lane="20_1"  pos="50.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_nb_0" lane="-14_0" pos="5.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_nb_1" lane="-14_1" pos="5.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_sb_0" lane="15_0"  pos="8.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_189_sb_1" lane="15_1"  pos="8.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+
+    <!-- TLS 532: -21 -> 2 (EB), 3 -> 21 (WB), -2 (cross) -->
+    <inductionLoop id="det_532_eb_0" lane="-21_0" pos="20.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_532_eb_1" lane="-21_1" pos="20.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_532_wb_0" lane="3_0"   pos="2.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_532_wb_1" lane="3_1"   pos="2.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_532_cr_0" lane="-2_0"  pos="5.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_532_cr_1" lane="-2_1"  pos="5.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+
+    <!-- TLS 719: -5 -> -18 (EB), 18 -> 5 (WB), 6 (cross) -->
+    <inductionLoop id="det_719_eb_0" lane="-5_0"  pos="95.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_719_eb_1" lane="-5_1"  pos="95.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_719_wb_0" lane="18_0"  pos="5.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_719_wb_1" lane="18_1"  pos="5.0"  freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_719_cr_0" lane="6_0"   pos="85.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_719_cr_1" lane="6_1"   pos="85.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+
+    <!-- TLS 468: -4 -> -5 (EB), 5 -> 4 (WB), 13 (cross) -->
+    <inductionLoop id="det_468_eb_0" lane="-4_0"  pos="22.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_468_eb_1" lane="-4_1"  pos="22.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_468_wb_0" lane="5_0"   pos="105.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_468_wb_1" lane="5_1"   pos="105.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_468_cr_0" lane="13_0"  pos="27.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_468_cr_1" lane="13_1"  pos="27.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+
+    <!-- TLS 23: -6 -> -22 (EB), 22 -> -7 (WB), 7 (cross) -->
+    <inductionLoop id="det_23_eb_0"  lane="-6_0"  pos="73.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_23_eb_1"  lane="-6_1"  pos="73.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_23_wb_0"  lane="22_0"  pos="20.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_23_wb_1"  lane="22_1"  pos="20.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_23_cr_0"  lane="7_0"   pos="17.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+    <inductionLoop id="det_23_cr_1"  lane="7_1"   pos="17.0" freq="60" file="../output/detectors.xml" friendlyPos="true"/>
+
+    <!-- Vertiport Beta -->
+
+    <busStop id="bs_vp2_wait"
+             lane="e_vp2_wait_0"
+             startPos="1" endPos="9"
+             friendlyPos="true"
+             name="VP-Beta Waiting Area"/>
+
+    <parkingArea id="pa_vp2"
+                 lane="e_vp2_park_0"
+                 startPos="2" endPos="20"
+                 roadsideCapacity="20"
+                 friendlyPos="true"
+                 name="VP-Beta Parking Lot"/>
+
+</additional>

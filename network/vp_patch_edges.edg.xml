@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <edge id="e_vp1_approach" from="189" to="n_vpa_entry" numLanes="1" speed="5.56" priority="5"/>
+    <edge id="e_vp1_wait" from="n_vpa_entry" to="n_vpa_wait" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp1_park" from="n_vpa_wait" to="n_vpa_park" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp1_rental" from="n_vpa_park" to="n_vpa_rental" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp1_exit_internal" from="n_vpa_rental" to="n_vpa_exit" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp1_exit" from="n_vpa_exit" to="189" numLanes="1" speed="5.56" priority="5"/>
+    <edge id="e_vp2_approach" from="841" to="n_vpb_entry" numLanes="1" speed="5.56" priority="5"/>
+    <edge id="e_vp2_wait" from="n_vpb_entry" to="n_vpb_wait" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp2_park" from="n_vpb_wait" to="n_vpb_park" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp2_rental" from="n_vpb_park" to="n_vpb_rental" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp2_exit_internal" from="n_vpb_rental" to="n_vpb_exit" numLanes="1" speed="4.17" priority="3"/>
+    <edge id="e_vp2_exit" from="n_vpb_exit" to="841" numLanes="1" speed="5.56" priority="5"/>
+    <edge id="e_takeoff_a" from="n_vpa_park" to="n_sky_a" numLanes="1" speed="20.0" priority="9"/>
+    <edge id="e_cruise_ab_1" from="n_sky_a" to="n_sky_1" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ab_2" from="n_sky_1" to="n_sky_m" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ab_3" from="n_sky_m" to="n_sky_2" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ab_4" from="n_sky_2" to="n_sky_b" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_land_b" from="n_sky_b" to="n_vpb_park" numLanes="1" speed="20.0" priority="9"/>
+    <edge id="e_takeoff_b" from="n_vpb_park" to="n_sky_b" numLanes="1" speed="20.0" priority="9"/>
+    <edge id="e_cruise_ba_1" from="n_sky_b" to="n_sky_2" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ba_2" from="n_sky_2" to="n_sky_m" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ba_3" from="n_sky_m" to="n_sky_1" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_cruise_ba_4" from="n_sky_1" to="n_sky_a" numLanes="1" speed="40.0" priority="9"/>
+    <edge id="e_land_a" from="n_sky_a" to="n_vpa_park" numLanes="1" speed="20.0" priority="9"/>
+</edges>
