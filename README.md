@@ -1,5 +1,8 @@
 # SUMO-AAMSim: eVTOL Air-Ground Traffic Co-Simulation
 ## Video Demonstration
+[![video](https://github.com/marviiiin/sumo-aam-sim/blob/a42e2d2dca6bcad3e370325d7855c833e4a2bd54/0508.mp4)](https://github.com/user-attachments/assets/78ab3ef2-4ae3-47bb-8c8c-f4adb6b92cb6)
+
+
 
 A multi-modal traffic simulation integrating **SUMO** (ground vehicles), **CARLA** (3D rendering), and **AirSim** (drone/eVTOL flight) via **CarlaAir** — a unified Unreal Engine environment that runs CARLA and AirSim simultaneously.
 
