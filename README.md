@@ -1,10 +1,11 @@
 # SUMO-AAMSim: eVTOL Air-Ground Traffic Co-Simulation
+## Video Demonstration
 
 A multi-modal traffic simulation integrating **SUMO** (ground vehicles), **CARLA** (3D rendering), and **AirSim** (drone/eVTOL flight) via **CarlaAir** — a unified Unreal Engine environment that runs CARLA and AirSim simultaneously.
 
 The simulation models an urban Advanced Air Mobility (AAM) corridor between two vertiports, with data-driven passenger demand from the Tampa Bay AAM Feasibility Study. Passengers arrive at vertiports, board eVTOL aircraft, fly between vertiports, and are dispatched as ground vehicles (rental cars) upon landing — all visualized in real-time 3D.
 
-![Architecture](docs/architecture.png)
+![image](https://github.com/marviiiin/sumo-aam-sim/blob/a5b24451faaebfe62eb0ba3ab1bea8aaea75e36d/ARCHITECTURE.png)
 
 ## Features
 
